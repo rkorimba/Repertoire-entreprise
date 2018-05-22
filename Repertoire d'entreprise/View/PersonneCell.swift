@@ -15,9 +15,10 @@ class PersonneCell: UITableViewCell {
     @IBOutlet weak var numeroDeTel: UILabel!
     @IBOutlet weak var adresseMail: UILabel!
     
-    var personne: Personne
+    var personne: Personne!
     
     func miseEnPlace(personne: Personne) {
+       
         self.personne = personne
         photoDeProfil.image = self.personne.photo as? UIImage
         var nomComplet = ""
@@ -33,6 +34,5 @@ class PersonneCell: UITableViewCell {
         let num = String(self.personne.numero) ?? ""
         numeroDeTel.text = num
         adresseMail.text = self.personne.mail ?? ""
-
     }
 }
