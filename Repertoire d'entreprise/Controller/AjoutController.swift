@@ -43,9 +43,11 @@ class AjoutController: UIViewController {
     }
     
     func fetchEntreprises() {
+        
         let requete: NSFetchRequest<Entreprise> = Entreprise.fetchRequest()
         let tri = NSSortDescriptor(key: "nom", ascending: true)
         requete.sortDescriptors = [tri]
+        
         do {
             entreprises = try contexte.fetch(requete)
             pickerView.reloadAllComponents()
@@ -56,7 +58,9 @@ class AjoutController: UIViewController {
     }
     
     @IBAction func ajouterEntrepriseAction(_ sender: Any) {
+       
         let alerte = UIAlertController(title: "Votre entreprise n'est pas dans la liste ?", message: "Ajoutez", preferredStyle: .alert)
+        
         let ajout = UIAlertAction(title: "OK", style: .default) { (action) in
             let textField = alerte.textFields![0] as UITextField
             if let texte = textField.text, texte != "" {
@@ -66,16 +70,38 @@ class AjoutController: UIViewController {
                 self.fetchEntreprises()
             }
         }
+        
         alerte.addTextField { (tf) in
             tf.placeholder = "nom de  l'entreprise"
         }
+        
         let annuler = UIAlertAction(title: "Annuler", style: .default, handler: nil)
+        
         alerte.addAction(ajout)
         alerte.addAction(annuler)
         self.present(alerte, animated: true, completion: nil)
     }
     
     @IBAction func ajouterPersonneAction(_ sender: Any) {
+        
+        view.endEditing(true)
+        let nouvellePersonne = Personne(context: contexte)
+        if prenomTextField.text != nil {
+            nouvellePersonne.prenom = prenomTextField.text!
+        }
+        if nomTextField.text != nil {
+            nouvellePersonne.nom = nomTextField.text!
+        }
+        if let numero = telTextField.text, let numeroInt = Int32(numero) {
+            nouvellePersonne.numero = numeroInt
+        }
+        if mailTextField.text != nil {
+            nouvellePersonne.mail = mailTextField.text!
+        }
+        nouvellePersonne.photo = imageDeProfil.image
+        nouvellePersonne.employeur = entreprises[pickerView.selectedRow(inComponent: 0)]
+    
+        appDelegate.saveContext()
     }
     
 }
