@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		D0EAC91F20ADA1A60032B431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EAC91E20ADA1A60032B431 /* AppDelegate.swift */; };
-		D0EAC92120ADA1A60032B431 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EAC92020ADA1A60032B431 /* ViewController.swift */; };
 		D0EAC92420ADA1A60032B431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0EAC92220ADA1A60032B431 /* Main.storyboard */; };
 		D0EAC92720ADA1A60032B431 /* Repertoire_d_entreprise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0EAC92520ADA1A60032B431 /* Repertoire_d_entreprise.xcdatamodeld */; };
 		D0EAC92920ADA1A70032B431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0EAC92820ADA1A70032B431 /* Assets.xcassets */; };
 		D0EAC92C20ADA1A70032B431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0EAC92A20ADA1A70032B431 /* LaunchScreen.storyboard */; };
+		D0EAC93820B420BB0032B431 /* AjoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EAC93720B420BB0032B431 /* AjoutController.swift */; };
+		D0EAC93A20B4277F0032B431 /* ImageArrondie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EAC93920B4277F0032B431 /* ImageArrondie.swift */; };
+		D0EAC93C20B428AA0032B431 /* BoutonArrondi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EAC93B20B428AA0032B431 /* BoutonArrondi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D0EAC91B20ADA1A60032B431 /* Repertoire d'entreprise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Repertoire d'entreprise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0EAC91E20ADA1A60032B431 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0EAC92020ADA1A60032B431 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D0EAC92320ADA1A60032B431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0EAC92620ADA1A60032B431 /* Repertoire_d_entreprise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Repertoire_d_entreprise.xcdatamodel; sourceTree = "<group>"; };
 		D0EAC92820ADA1A70032B431 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0EAC92B20ADA1A70032B431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0EAC92D20ADA1A70032B431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0EAC93720B420BB0032B431 /* AjoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjoutController.swift; sourceTree = "<group>"; };
+		D0EAC93920B4277F0032B431 /* ImageArrondie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageArrondie.swift; sourceTree = "<group>"; };
+		D0EAC93B20B428AA0032B431 /* BoutonArrondi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonArrondi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		D0EAC91D20ADA1A60032B431 /* Repertoire d'entreprise */ = {
 			isa = PBXGroup;
 			children = (
+				D0EAC93520ADA1FE0032B431 /* Model */,
+				D0EAC93420ADA1F50032B431 /* View */,
+				D0EAC93320ADA1ED0032B431 /* Controller */,
+				D0EAC93620ADA2130032B431 /* Storyboard */,
 				D0EAC91E20ADA1A60032B431 /* AppDelegate.swift */,
-				D0EAC92020ADA1A60032B431 /* ViewController.swift */,
-				D0EAC92220ADA1A60032B431 /* Main.storyboard */,
 				D0EAC92820ADA1A70032B431 /* Assets.xcassets */,
-				D0EAC92A20ADA1A70032B431 /* LaunchScreen.storyboard */,
 				D0EAC92D20ADA1A70032B431 /* Info.plist */,
-				D0EAC92520ADA1A60032B431 /* Repertoire_d_entreprise.xcdatamodeld */,
 			);
 			path = "Repertoire d'entreprise";
+			sourceTree = "<group>";
+		};
+		D0EAC93320ADA1ED0032B431 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D0EAC93720B420BB0032B431 /* AjoutController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D0EAC93420ADA1F50032B431 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0EAC93920B4277F0032B431 /* ImageArrondie.swift */,
+				D0EAC93B20B428AA0032B431 /* BoutonArrondi.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0EAC93520ADA1FE0032B431 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0EAC92520ADA1A60032B431 /* Repertoire_d_entreprise.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0EAC93620ADA2130032B431 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D0EAC92A20ADA1A70032B431 /* LaunchScreen.storyboard */,
+				D0EAC92220ADA1A60032B431 /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0EAC92120ADA1A60032B431 /* ViewController.swift in Sources */,
 				D0EAC91F20ADA1A60032B431 /* AppDelegate.swift in Sources */,
+				D0EAC93A20B4277F0032B431 /* ImageArrondie.swift in Sources */,
+				D0EAC93820B420BB0032B431 /* AjoutController.swift in Sources */,
+				D0EAC93C20B428AA0032B431 /* BoutonArrondi.swift in Sources */,
 				D0EAC92720ADA1A60032B431 /* Repertoire_d_entreprise.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "TT.Repertoire-d-entreprise";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "TT.Repertoire-d-entreprise";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
