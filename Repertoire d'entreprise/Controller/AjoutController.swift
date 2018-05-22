@@ -22,16 +22,16 @@ class AjoutController: UIViewController {
     @IBOutlet weak var largeurContrainte: NSLayoutConstraint!
     @IBOutlet weak var contrainteDuBas: NSLayoutConstraint!
     
+    var testPicker = ["Apple", "Alphabet", "Big Blue", "Microsoft", "Facebook"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        miseEnPlacePicker()
        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        view.backgroundColor = .lightGray
         largeurContrainte.constant = view.frame.width
         scroll.contentSize = CGSize(width: largeurContrainte.constant, height: scroll.frame.height)
     }

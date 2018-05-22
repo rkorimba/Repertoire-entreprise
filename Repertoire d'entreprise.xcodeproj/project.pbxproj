@@ -15,6 +15,7 @@
 		D0EAC93820B420BB0032B431 /* AjoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EAC93720B420BB0032B431 /* AjoutController.swift */; };
 		D0EAC93A20B4277F0032B431 /* ImageArrondie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EAC93920B4277F0032B431 /* ImageArrondie.swift */; };
 		D0EAC93C20B428AA0032B431 /* BoutonArrondi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EAC93B20B428AA0032B431 /* BoutonArrondi.swift */; };
+		D0EAC93E20B42A790032B431 /* PickerViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EAC93D20B42A790032B431 /* PickerViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D0EAC93720B420BB0032B431 /* AjoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjoutController.swift; sourceTree = "<group>"; };
 		D0EAC93920B4277F0032B431 /* ImageArrondie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageArrondie.swift; sourceTree = "<group>"; };
 		D0EAC93B20B428AA0032B431 /* BoutonArrondi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonArrondi.swift; sourceTree = "<group>"; };
+		D0EAC93D20B42A790032B431 /* PickerViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				D0EAC93720B420BB0032B431 /* AjoutController.swift */,
+				D0EAC93D20B42A790032B431 /* PickerViewExtension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				D0EAC91F20ADA1A60032B431 /* AppDelegate.swift in Sources */,
 				D0EAC93A20B4277F0032B431 /* ImageArrondie.swift in Sources */,
+				D0EAC93E20B42A790032B431 /* PickerViewExtension.swift in Sources */,
 				D0EAC93820B420BB0032B431 /* AjoutController.swift in Sources */,
 				D0EAC93C20B428AA0032B431 /* BoutonArrondi.swift in Sources */,
 				D0EAC92720ADA1A60032B431 /* Repertoire_d_entreprise.xcdatamodeld in Sources */,
