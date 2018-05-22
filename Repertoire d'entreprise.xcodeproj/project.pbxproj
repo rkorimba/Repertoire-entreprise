@@ -10,6 +10,7 @@
 		D0934CD420B42FEE008318FC /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0934CD320B42FEE008318FC /* Constantes.swift */; };
 		D0934CD620B4363E008318FC /* ImagePickerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0934CD520B4363E008318FC /* ImagePickerExtension.swift */; };
 		D0934CD820B44401008318FC /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0934CD720B44401008318FC /* TextFieldExtension.swift */; };
+		D0934CDA20B4452F008318FC /* NotificationCenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0934CD920B4452F008318FC /* NotificationCenterExtension.swift */; };
 		D0EAC91F20ADA1A60032B431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EAC91E20ADA1A60032B431 /* AppDelegate.swift */; };
 		D0EAC92420ADA1A60032B431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0EAC92220ADA1A60032B431 /* Main.storyboard */; };
 		D0EAC92720ADA1A60032B431 /* Repertoire_d_entreprise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0EAC92520ADA1A60032B431 /* Repertoire_d_entreprise.xcdatamodeld */; };
@@ -25,6 +26,7 @@
 		D0934CD320B42FEE008318FC /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
 		D0934CD520B4363E008318FC /* ImagePickerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerExtension.swift; sourceTree = "<group>"; };
 		D0934CD720B44401008318FC /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		D0934CD920B4452F008318FC /* NotificationCenterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterExtension.swift; sourceTree = "<group>"; };
 		D0EAC91B20ADA1A60032B431 /* Repertoire d'entreprise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Repertoire d'entreprise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0EAC91E20ADA1A60032B431 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0EAC92320ADA1A60032B431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				D0EAC93D20B42A790032B431 /* PickerViewExtension.swift */,
 				D0934CD520B4363E008318FC /* ImagePickerExtension.swift */,
 				D0934CD720B44401008318FC /* TextFieldExtension.swift */,
+				D0934CD920B4452F008318FC /* NotificationCenterExtension.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				D0EAC93A20B4277F0032B431 /* ImageArrondie.swift in Sources */,
 				D0EAC93E20B42A790032B431 /* PickerViewExtension.swift in Sources */,
 				D0934CD620B4363E008318FC /* ImagePickerExtension.swift in Sources */,
+				D0934CDA20B4452F008318FC /* NotificationCenterExtension.swift in Sources */,
 				D0EAC93820B420BB0032B431 /* AjoutController.swift in Sources */,
 				D0EAC93C20B428AA0032B431 /* BoutonArrondi.swift in Sources */,
 				D0934CD420B42FEE008318FC /* Constantes.swift in Sources */,
