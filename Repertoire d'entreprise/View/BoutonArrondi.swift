@@ -21,12 +21,12 @@ class BoutonArrondi: UIButton {
     }
 
     func miseEnPlace() {
+        
         layer.cornerRadius = 10
         layer.borderWidth = 0.5
         layer.borderColor = UIColor.darkGray.cgColor
         tintColor = UIColor.black
         titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-    
     }
     
 }

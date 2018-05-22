@@ -21,6 +21,7 @@ class ImageArrondie: UIImageView {
     }
 
     func miseEnPlace() {
+       
         layer.cornerRadius = frame.width / 2
         layer.borderColor = UIColor.white.cgColor
         layer.borderWidth = 1
